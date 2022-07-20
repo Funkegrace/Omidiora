@@ -1,0 +1,177 @@
+#experience {
+  margin: 117px 180px;
+
+  .skill-exp-text {
+    display: flex;
+    color: #121316;
+    gap: 80px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    h2 {
+      font-family: "Goudy Old Style";
+      font-size: 2.5rem;
+      font-weight: 700;
+      max-width: 217px;
+    }
+
+    .skill-exp-text-2 {
+      font-family: "inter";
+      font-size: 1rem;
+      font-weight: 500;
+      max-width: 677px;
+      line-height: 29px;
+    }
+  }
+
+  .skills {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    //  max-width: 504px;
+     
+    margin-bottom: 3.125rem;
+
+    .skills-text {
+      font-family: "inter";
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h2 {
+        font-weight: 700;
+        margin: 0rem;
+      }
+
+      ul {
+        list-style-type: none;
+        width: 504px;
+        padding: 0rem;
+
+        li {
+          font-weight: 700;
+          font-size: 1.5rem;
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .accordion-btn {
+        // position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "GT Walsheim Pro", sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        border-bottom: 1px solid #bdbdbd;
+        box-shadow: none;
+        width: 100%;
+        text-align: start;
+        padding: 16px 0px;
+        border-radius: 0px;
+        color: var(--variation2);
+
+        .icon {
+          position: relative;
+          height: 1.5px;
+          width: 20px;
+          background: var(--variation2);
+          border-radius: 150px;
+          transition: all 0.3s ease;
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            height: 1.5px;
+            width: 20px;
+            background: var(--variation2);
+            border-radius: 150px;
+            transform: rotate(0deg);
+            transition: all 0.3s ease;
+          }
+        }
+      }
+
+      .accordion-btn[aria-expanded="false"] {
+        .icon {
+          transform: rotate(180deg);
+
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      .accordion-content {
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+        color: var(--variation2);
+      }
+    }
+  }
+
+  .divider {
+    height: 0.0625rem;
+    width: 100%;
+    background: #121316;
+  }
+}
+
+::ng-deep {
+  .mat-accordion .mat-expansion-panel {
+    margin-top: 30px !important ;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #experience {
+    margin: 100px 100px;
+
+    .skill-exp-text {
+      justify-content: center;
+      h2 {
+        max-width: unset;
+      }
+    }
+
+    .skills {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  #experience {
+    margin: 40px 60px;
+
+    .skill-exp-text {
+      justify-content: center;
+      gap: 1.25rem;
+      h2 {
+        max-width: unset;
+        font-size: 1.75rem;
+      }
+    }
+
+    .skills {
+      justify-content: center;
+
+      .skills-text {
+        h2 {
+          text-align: center;
+        }
+
+        ul {
+          width: auto;
+
+          li {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

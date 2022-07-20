@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background: #121316;
+    padding-top: 4rem;
+    
+    
+
+    .wrapper-ul {
+        list-style-type: none;
+        display: flex;
+        gap: 2.375rem;}
+
+    .nav-links {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: Inter;
+      }
+}

@@ -1,0 +1,127 @@
+#landing {
+  background: #121316;
+    // width: 1440px;
+  // height: 843px;
+max-width: 100%;
+
+  .container-fluid {
+    margin-left: 180px;
+    margin-right: 180px;
+    
+    padding: 0px;
+    // padding-right: 180px;
+    // padding-left: 180px;
+  }
+
+  .home-landing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    margin-bottom: 34px;
+
+    .home-landing-wrapper{
+      display: flex;
+      align-items: center;
+
+      .home-landing-text {
+        font-weight: 700;
+        font-size: 70px;
+        color: #ffffff;
+        font-family: Goudy Old Style;
+        width: 525px;
+      }
+    }
+
+    
+  }
+
+  .divider {
+    height: 0.0625rem;
+    width: 100%;
+    background: #d8dee8;
+  }
+
+  .about-me {
+    display: flex;
+    gap: 80px;
+    color: #ffffff;
+    margin-top: 2.5rem;
+
+    h2 {
+      font-family: Goudy Old Style;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .about-me-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+
+      .about-me-text {
+        font-size: 1rem;
+        font-family: inter;
+        font-weight: 400;
+        max-width: 677px;
+      }
+
+      .about-me-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 39px;
+        font-family: "Greycliff CF";
+
+        a {
+          color: #ffcc00;
+        }
+
+        .button-1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          font-weight: 400;
+          box-shadow: none;
+          padding: 4px 56px;
+          background: #ffcc00;
+          border-radius: 4px;
+          color: #121316;
+          border: 2px solid #ffcc00;
+        }
+
+        .button-2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1rem;
+          font-weight: 400;
+          box-shadow: none;
+          padding: 4px 56px;
+          background: #121316;
+          border-radius: 4px;
+          color: #ffcc00;
+          border: 2px solid #ffcc00;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #landing{
+
+    .home-landing{
+
+      .home-landing-wrapper{
+        
+        .home-landing-text{
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  
+}
+
