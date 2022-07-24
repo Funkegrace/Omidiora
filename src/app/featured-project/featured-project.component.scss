@@ -1,0 +1,88 @@
+#featured-projects {
+  background: #121316;
+
+  .container-fluid {
+    padding: 117px 180px;
+
+    .project-text {
+      display: flex;
+      color: #ffffff;
+      gap: 80px;
+      margin-bottom: 111px;
+      flex-wrap: wrap;
+
+      h2 {
+        font-family: "Goudy Old Style";
+        font-size: 2.5rem;
+        font-weight: 700;
+        max-width: 270px;
+      }
+
+      .project-text-1 {
+        font-family: "inter";
+        font-size: 1rem;
+        font-weight: 400;
+        max-width: 588px;
+        line-height: 29px;
+        height: 118px;
+        margin: 0px;
+      }
+    }
+
+    .project-images {
+        display: flex;
+        gap: 2.5rem;
+        
+      .project-img-sec1 {
+        .project-info {
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+
+          .project-info-text {
+            display: flex;
+            flex-direction: column;
+            h1 {
+              font-family: "inter";
+              font-weight: 700;
+              line-height: 40px;
+              color: #ffffff;
+            }
+            .project-info-text2 {
+              display: flex;
+              justify-content: space-between;
+
+              p {
+                font-color: #ffffff;
+                font-weight: 400;
+              }
+
+              a {
+                -webkit-text-decoration: none;
+                text-decoration: none;
+
+                .btn-case-study {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1rem;
+                  font-weight: 400;
+                  box-shadow: none;
+                  padding: 0.625rem 2.5rem;
+                  background: #121316;
+                  border-radius: 4px;
+                  color: #ffcc00;
+                  border: 2px solid #ffcc00;
+                  font-family: 'Greycliff CF';
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .project-img-sec2 {
+      }
+    }
+  }
+}

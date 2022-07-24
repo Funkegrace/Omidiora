@@ -9,6 +9,7 @@ import { LandingComponent } from './@components/landing/landing.component';
 import { ExperienceComponent } from './experience/experience.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FeaturedProjectComponent } from './featured-project/featured-project.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     HeroComponent,
     LandingComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    FeaturedProjectComponent
   ],
   imports: [
     BrowserModule,

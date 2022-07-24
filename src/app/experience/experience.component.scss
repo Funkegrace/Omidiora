@@ -75,7 +75,7 @@
           position: relative;
           height: 1.5px;
           width: 20px;
-          background: var(--variation2);
+          background: #121316;
           border-radius: 150px;
           transition: all 0.3s ease;
 
@@ -85,7 +85,7 @@
             left: 0px;
             height: 1.5px;
             width: 20px;
-            background: var(--variation2);
+            background: #121316;
             border-radius: 150px;
             transform: rotate(0deg);
             transition: all 0.3s ease;
@@ -117,6 +117,29 @@
     width: 100%;
     background: #121316;
   }
+
+  .experience{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    
+    .experience-text{
+
+            font-family: "inter";
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h2 {
+              font-weight: 700;
+              margin: 0rem;
+            }
+
+            .accord{
+                max-width: 504px;
+                min-width: 504px;
+            }
+    }
+  }
 }
 
 ::ng-deep {
@@ -138,6 +161,10 @@
     }
 
     .skills {
+      justify-content: center;
+    }
+
+    .experience {
       justify-content: center;
     }
   }
@@ -173,5 +200,18 @@
         }
       }
     }
+
+    .experience{
+        justify-content: center;
+        .experience-text {
+            h2 {
+              text-align: center;
+            }
+            .accord{
+            min-width: auto;
+            }
+    }
   }
 }
+}
+
